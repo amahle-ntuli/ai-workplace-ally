@@ -124,7 +124,7 @@ function ChatPage() {
             <ConversationScrollButton />
           </Conversation>
 
-          <div className="border-t border-border p-4">
+          <div className="border-t border-border px-3 py-2.5">
             <PromptInput
               onSubmit={(message) => {
                 send(message.text ?? "");
@@ -132,12 +132,13 @@ function ChatPage() {
             >
               <PromptInputTextarea
                 placeholder="Ask about an email, a plan, a tricky conversation…"
+                className="min-h-10 max-h-28"
               />
               <PromptInputFooter className="justify-end">
                 <PromptInputSubmit status={status} disabled={busy} />
               </PromptInputFooter>
             </PromptInput>
-            <ResponsibleAiNotice className="mt-3" />
+            <ResponsibleAiNotice className="mt-2" />
           </div>
         </div>
       </div>
