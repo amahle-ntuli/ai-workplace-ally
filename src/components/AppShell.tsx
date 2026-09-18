@@ -37,7 +37,7 @@ function Brand() {
         <Leaf className="size-5" aria-hidden />
       </span>
       <span className="leading-tight">
-        <span className="block font-display text-base font-semibold">Verdant</span>
+        <span className="block font-display text-base font-semibold">Quick Assist</span>
         <span className="block text-xs text-muted-foreground">Workplace AI Assistant</span>
       </span>
     </div>
