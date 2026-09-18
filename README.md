@@ -1,134 +1,111 @@
-# AI Workplace Ally
+# AI Workplace Productivity Assistant
 
-Build a modern, responsive web application called AI Workplace Productivity Assistant.
+## Project Overview
 
-Purpose
+**AI Workplace Productivity Assistant** is a modern, responsive SaaS-style web application designed to help professionals improve workplace productivity through AI-generated assistance.
 
-Create a professional SaaS-style AI assistant that helps professionals complete common workplace tasks using AI-generated responses.
+The application provides three core tools: a **Smart Email Generator**, an **AI Task Planner**, and an **AI Workplace Chatbot**. Each tool uses structured AI prompts to generate useful, context-aware responses based on the user's input.
 
-Core Features
+The application is designed as a lightweight frontend experience and does **not store user data or require a backend, database, or user authentication**.
 
-1. Smart Email Generator
+The interface follows an organic modernism design approach, using a professional palette of beige, green, brown, white, and off-white tones.
 
-Allow users to enter the purpose/content of an email.
-Let users select a tone:
-Formal
-Friendly
-Persuasive
-Generate a complete, professional email using AI.
-Make the generated email fully editable.
-Include a clear option to regenerate the response.
+## Features Implemented
 
-2. AI Task Planner
+### Smart Email Generator
 
-Allow users to enter their tasks for the day or week.
-Ask the AI to organise, prioritise, and structure the tasks.
-Generate a realistic daily or weekly schedule based on the user's input.
-Allow users to edit the generated schedule.
-Prioritisation should consider urgency and importance.
+* Generate professional workplace emails using AI.
+* Enter the purpose or details of an email.
+* Select between Formal, Friendly, and Persuasive tones.
+* Generate editable AI responses.
+* Regenerate content when needed.
+* Copy generated emails for use outside the application.
 
-3. AI Workplace Chatbot
+### AI Task Planner
 
-Provide an interactive chat interface where users can ask workplace-related questions or request assistance.
-Responses must be generated dynamically by AI based on the user's prompt.
-Do not use generic placeholder responses or pre-written chatbot answers.
-The chatbot should assist with workplace communication, organisation, productivity, planning, brainstorming, and professional writing.
-UI/UX Design
+* Enter daily or weekly tasks.
+* Use AI to organise and prioritise tasks.
+* Generate structured daily or weekly schedules.
+* Prioritise tasks according to urgency and importance.
+* Edit generated schedules.
+* Regenerate schedules when requirements change.
 
-Use a clean, modern, professional SaaS dashboard aesthetic inspired by organic modernism.
+### AI Workplace Chatbot
 
-Colour palette:
+* Interactive AI workplace assistant.
+* Responds dynamically to user prompts.
+* Supports workplace communication, productivity, planning, brainstorming, and professional writing.
+* Uses AI-generated responses rather than generic or hard-coded responses.
+* Provides an interactive chat-style interface.
 
-Warm beige
-Sage/forest green
-Soft brown
-White/off-white
-Use dark green or brown for text where appropriate.
+### User Interface
 
-Include:
+* Modern SaaS dashboard design.
+* Responsive desktop, tablet, and mobile layouts.
+* Sidebar navigation.
+* Dedicated pages for each AI productivity tool.
+* Clean cards, forms, buttons, and editable content areas.
+* Organic modernism-inspired colour palette.
+* Clear visual hierarchy and accessible interface design.
 
-Left sidebar navigation
-Dashboard/home page
-Email Generator page
-Task Planner page
-AI Chat page
-Clear navigation between features
-Modern cards, buttons, forms, and input fields
-Spacious layouts and subtle rounded corners
-Responsive design for desktop, tablet, and mobile
-Accessible typography and strong visual hierarchy
-Dashboard
+### Responsible AI
 
-Create a simple dashboard showing the three main AI tools:
+* Includes a Responsible AI disclaimer.
+* Reminds users to review AI-generated content for accuracy, appropriateness, confidentiality, and potential errors before using it professionally.
 
-Smart Email Generator
-AI Task Planner
-AI Workplace Chatbot
+## Technologies and Tools Used
 
-The dashboard should immediately communicate what the application does and allow users to access each tool quickly.
+* **Lovable** – Application development and UI generation.
+* **React** – Frontend application framework.
+* **TypeScript** – Application development language.
+* **Tailwind CSS** – Responsive styling and UI design.
+* **AI API / AI Model Integration** – Dynamic generation of emails, task plans, and chatbot responses.
+* **GitHub** – Source-code version control and project management.
 
-AI Behaviour
+> The application does not use a backend database or persistent user-data storage. User inputs and AI-generated outputs are intended to remain within the current application session.
 
-All substantive outputs must be generated dynamically by AI based on the user's input.
+## Setup Instructions
 
-Use structured prompts behind each feature so the AI understands:
+### 1. Clone the Repository
 
-The user's request
-The desired output format
-The selected tone or priority
-The workplace/professional context
+```bash
+git clone <repository-url>
+```
 
-Do not hard-code generic AI responses.
+### 2. Navigate to the Project
 
-Editable Outputs
+```bash
+cd ai-workplace-productivity-assistant
+```
 
-All AI-generated emails, schedules, and other generated content should appear in editable fields or editable content areas so users can modify the results before using them.
+### 3. Install Dependencies
 
-Include actions such as:
+```bash
+npm install
+```
 
-Generate
-Regenerate
-Edit
-Copy
-Data & Backend Restrictions
+### 4. Configure AI Integration
 
-This application must NOT have a backend, database, authentication system, or persistent data storage.
+If the project requires an AI API key, create a local environment configuration file and add the required API credentials according to the AI provider's documentation.
 
-Do not store user prompts, conversations, generated emails, schedules, or personal information.
+Do not commit API keys or other sensitive credentials to the repository.
 
-The application should function as a frontend AI tool, with AI responses generated dynamically during the user's session.
+### 5. Start the Development Server
 
-Do not add unnecessary account systems, dashboards requiring saved data, databases, analytics, or persistent user profiles.
-
-Responsible AI
-
-Include a clearly visible but unobtrusive Responsible AI disclaimer stating that AI-generated content should be reviewed by the user for accuracy, appropriateness, confidentiality, and potential errors before being used in a professional setting.
-
-Important Build Instructions
-
-Prioritise the three core AI features and a polished responsive UI.
-
-Keep the application simple and lightweight. Do not add features outside the requirements above.
-
-Do not create mock AI responses or placeholder content where AI generation is required. The application's actual outputs should come from AI.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/9d66bb7a-2aea-46ed-9e68-29b2bdada592).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
 npm run dev
 ```
+
+The application should then be available through the local development URL provided by the development server.
+
+### 6. Build for Production
+
+```bash
+npm run build
+```
+
+## Author
+
+**Amahle Ntuli**
+
+AI Workplace Productivity Assistant — developed as a professional AI productivity application focused on workplace communication, task planning, and AI-assisted productivity.
